@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chaotic Good, Inc. is a California film and television production company led by President Thomas Clinton Charles Danon.">
+  <title>Chaotic Good, Inc. | Film & Television</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #050607;
+      color: #f5f5f5;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: auto;
+      padding: 0 28px;
+    }
+
+    header {
+      min-height: 78vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 70px 0;
+    }
+
+    .logo {
+      display: block;
+      width: min(100%, 850px);
+      height: auto;
+      margin: 0 auto 35px;
+    }
+
+    .tagline {
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #a7b0b6;
+    }
+
+    .intro {
+      max-width: 710px;
+      margin: 38px auto 0;
+      font-size: 19px;
+      font-weight: 300;
+      color: #c4c7ca;
+    }
+
+    section {
+      padding: 85px 0;
+      border-top: 1px solid #25282b;
+    }
+
+    h2 {
+      font-size: 13px;
+      font-weight: normal;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #919ca6;
+      margin: 0 0 35px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .project {
+      min-height: 250px;
+      padding: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: linear-gradient(145deg, #141720, #090c10);
+      border: 1px solid #26303a;
+      border-radius: 4px;
+      color: white;
+      text-decoration: none;
+      transition: border-color .3s, transform .3s;
+    }
+
+    .project:hover {
+      border-color: #49b9ab;
+      transform: translateY(-4px);
+    }
+
+    .project h3 {
+      font-size: 26px;
+      font-weight: 400;
+      line-height: 1.15;
+      margin: 0 0 10px;
+    }
+
+    .project p {
+      font-size: 14px;
+      color: #a1a9b2;
+      margin: 0;
+    }
+
+    .project .action {
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #6bd4c0;
+    }
+
+    .contact {
+      font-size: clamp(22px, 4vw, 38px);
+      overflow-wrap: anywhere;
+    }
+
+    .contact a {
+      color: #f5f5f5;
+      text-decoration: none;
+      border-bottom: 1px solid #6bd4c0;
+    }
+
+    footer {
+      padding: 35px 0 60px;
+      font-size: 12px;
+      color: #777f86;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 650px) {
+      header { min-height: 65vh; }
+      .intro { font-size: 17px; }
+      .projects { grid-template-columns: 1fr; }
+      section { padding: 60px 0; }
+      .project { min-height: 220px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <img class="logo"
+           src="chaotic-good-logo.png"
+           alt="Chaotic Good, Inc. logo">
+
+      <div class="tagline">Film & Television Production</div>
+
+      <p class="intro">
+        Chaotic Good, Inc. is a California film and television
+        production company led by President
+        Thomas Clinton Charles Danon.
+        Its productions include the original fictional series
+        <em>The Kronos Conspiracy</em>.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Selected Work</h2>
+
+        <div class="projects">
+          <a class="project"
+             href="https://www.youtube.com/@kronosconspiracy"
+             target="_blank" rel="noopener noreferrer">
+            <div>
+              <h3>The Kronos Conspiracy</h3>
+              <p>Original Fiction Series</p>
+            </div>
+            <div class="action">Official Series Channel &rarr;</div>
+          </a>
+
+          <a class="project"
+             href="https://www.youtube.com/channel/UC6CibhHzh1J3nlWyA-lGItQ"
+             target="_blank" rel="noopener noreferrer">
+            <div>
+              <h3>Chaotic Good Films</h3>
+              <p>Original Films & Projects</p>
+            </div>
+            <div class="action">View Films &rarr;</div>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Business Inquiries</h2>
+        <div class="contact">
+          <a href="mailto:tom@chaoticgood.biz">
+            tom@chaoticgood.biz
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; 2026 Chaotic Good, Inc.
+      &nbsp; | &nbsp; Los Angeles, California
+    </footer>
+
+  </div>
+</body>
+</html>
